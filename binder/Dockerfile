@@ -18,6 +18,7 @@ RUN ( usermod -aG sudo juser; passwd -d jovyan )
 # USER juser
 
 # ENV JROOT=/home/juser
+ENV JUPYTER_ENABLE_LAB="Y"
 ENV CGIT=https://github.com/climate-machine/CLIMA.git
 ENV CC=/usr/bin/mpicc
 ENV CXX=/usr/bin/mpicxx
